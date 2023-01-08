@@ -1,0 +1,30 @@
+name: Deploy page
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  deploy-page:
+    name: Deploy docs
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3
+
+      - name: Set up Python 🧰
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Install dependencies 🧰
+        run: |
+          pip install -r requirements.txt
+
+      - name: Deploy page 🚀
+        run: mkdocs gh-deploy --force

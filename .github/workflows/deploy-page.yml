@@ -38,7 +38,7 @@ jobs:
         with:
           template: "@asyncapi/html-template@0.28.1" #In case of template from npm, because of @ it must be in quotes
           filepath: asyncapi.yml
-          parameters: baseHref=/YouCube/ sidebarOrganization=byTags #space separated list of key/values
+          parameters: baseHref=/api/ sidebarOrganization=byTags #space separated list of key/values
           output: docs/api
 
       - name: Deploy page 🚀

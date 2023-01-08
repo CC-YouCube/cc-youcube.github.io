@@ -26,5 +26,20 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      #Using another action for AsyncAPI for validation
+      - name: Validate asyncapi.yml ✅
+        uses: WaleedAshraf/asyncapi-github-action@v0.0.9
+        with:
+          filepath: asyncapi.yml
+
+      #In case you do not want to use defaults, you for example want to use different template
+      - name: Generate HTML from asyncapi.yml 📄
+        uses: docker://asyncapi/github-action-for-generator:2.1.8
+        with:
+          template: "@asyncapi/html-template@0.28.1" #In case of template from npm, because of @ it must be in quotes
+          filepath: asyncapi.yml
+          parameters: baseHref=/YouCube/ sidebarOrganization=byTags #space separated list of key/values
+          output: docs/api
+
       - name: Deploy page 🚀
         run: mkdocs gh-deploy --force

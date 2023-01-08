@@ -34,7 +34,7 @@ jobs:
 
       #In case you do not want to use defaults, you for example want to use different template
       - name: Generate HTML from asyncapi.yml 📄
-        uses: docker://asyncapi/github-action-for-generator:2.1.8
+        uses: docker://asyncapi/github-action-for-generator:2.1.7
         with:
           template: "@asyncapi/html-template@0.28.1" #In case of template from npm, because of @ it must be in quotes
           filepath: asyncapi.yml

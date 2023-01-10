@@ -26,6 +26,9 @@ theme:
   features:
     - navigation.footer
     - header.autohide
+    - content.code.copy
+    - navigation.tracking
+    - navigation.top
 repo_url: https://github.com/CC-YouCube
 repo_name: YouCube
 
@@ -46,3 +49,9 @@ extra:
       find what they're searching for. With your consent, you're helping us to
       make our documentation better.
 copyright: Copyright &copy; 2023 Commandcracker
+
+nav:
+  - index.md
+  - install.md
+  - 'Client Documentation': '/client/'
+  - 'API Documentation': '/api/'

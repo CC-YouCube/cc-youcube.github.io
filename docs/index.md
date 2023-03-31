@@ -14,10 +14,10 @@ So why wait? Start enjoying the best in media entertainment with YouCube today!
 
 ## How it works
 
-<!---
-add this when Mermaid has been upgraded
-https://github.com/squidfunk/mkdocs-material/issues/5251
-
+```mermaid
+sequenceDiagram
+    autonumber
+    actor Client
     box rgb(33,66,99) Server
         participant Sanic
         participant YT-DLP
@@ -25,12 +25,6 @@ https://github.com/squidfunk/mkdocs-material/issues/5251
         participant FFmpeg
         participant Sanjuuni
     end
--->
-
-```mermaid
-sequenceDiagram
-    autonumber
-    actor Client
     Note over Cache: Folder on server
     Note over Sanic: Web server
     Client-)Sanic: Sends a media request

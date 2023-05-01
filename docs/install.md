@@ -7,5 +7,5 @@ pastebin run swsmNAf7
 ```
 
 ```shell
-wget run https://raw.githubusercontent.com/Commandcracker/YouCube/main/installer.lua
+wget run https://raw.githubusercontent.com/CC-YouCube/installer/main/src/installer.lua
 ```

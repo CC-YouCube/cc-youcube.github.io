@@ -55,3 +55,9 @@ nav:
   - install.md
   - 'Client Documentation': '/client/'
   - 'API Documentation': '/api/'
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid

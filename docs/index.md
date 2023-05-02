@@ -12,6 +12,14 @@ So why wait? Start enjoying the best in media entertainment with YouCube today!
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dz96Y4mo0GI" title="YouCube Example 2" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
+## Supported Sites
+
+YouCube is optimized for [YouTube]. It supports [Spotify], but only when the YouCube server has it enabled. It supports [all sites from yt-dlp], as well as yt-dlp's generic downloader. So, if you can find a direct link to a media file, YouCube will probably be able to play it.
+
+[YouTube]: https://www.youtube.com
+[Spotify]: https://www.spotify.com
+[all sites from yt-dlp]: https://github.com/yt-dlp/yt-dlp/blob/master/supportedsites.md
+
 ## How it works
 
 ```mermaid

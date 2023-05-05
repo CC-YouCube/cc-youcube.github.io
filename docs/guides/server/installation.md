@@ -83,3 +83,4 @@ Then you'll need to install the following dependencies to install the YouCube se
 [Python 3.7+]: https://www.python.org/downloads
 [docker]: https://www.docker.com
 [the repository]: https://github.com/CC-YouCube/server
+[Dockerfile]: https://github.com/CC-YouCube/server/blob/main/src/Dockerfile

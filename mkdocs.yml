@@ -3,8 +3,8 @@ site_name: YouCube
 site_url: https://youcube.madefor.cc/
 site_author: Commandcracker
 site_description: >-
-  YouCube is a service for accessing media providers in
-  the Minecraft mod ComputerCraft or CC: Tweaked.
+    YouCube is a service for accessing media providers in
+    the Minecraft mod ComputerCraft or CC: Tweaked.
 
 # Repository
 repo_name: YouCube
@@ -15,95 +15,96 @@ copyright: Copyright &copy; 2023 Commandcracker
 
 # Configuration
 theme:
-  name: material
-  features:
-    - navigation.footer
-    - header.autohide
-    - content.code.copy
-    - navigation.tracking
-    - navigation.top
-    - navigation.tabs
-    - navigation.sections
-  palette:
-    # Palette toggle for light mode
-    - media: "(prefers-color-scheme: light)"
-      scheme: default
-      primary: red
-      accent: red
-      toggle:
-        icon: material/brightness-7
-        name: Switch to dark mode
+    name: material
+    features:
+        - navigation.footer
+        - header.autohide
+        - content.code.copy
+        - navigation.tracking
+        - navigation.top
+        - navigation.tabs
+        - navigation.sections
+    palette:
+        # Palette toggle for light mode
+        - media: "(prefers-color-scheme: light)"
+          scheme: default
+          primary: red
+          accent: red
+          toggle:
+              icon: material/brightness-7
+              name: Switch to dark mode
 
-    # Palette toggle for dark mode
-    - media: "(prefers-color-scheme: dark)"
-      scheme: slate
-      primary: red
-      accent: red
-      toggle:
-        icon: material/brightness-4
-        name: Switch to light mode
-  font:
-    text: Roboto
-    code: Roboto Mono
-  logo: assets/icon.ico
-  favicon: assets/icon.ico
-  icon:
-    repo: fontawesome/brands/github
+        # Palette toggle for dark mode
+        - media: "(prefers-color-scheme: dark)"
+          scheme: slate
+          primary: red
+          accent: red
+          toggle:
+              icon: material/brightness-4
+              name: Switch to light mode
+    font:
+        text: Roboto
+        code: Roboto Mono
+    logo: assets/icon.ico
+    favicon: assets/icon.ico
+    icon:
+        repo: fontawesome/brands/github
 
 # Plugins
 plugins:
-  - search
-  - git-revision-date-localized
-  - git-committers:
-      repository: CC-YouCube/cc-youcube.github.io
-      branch: main
-      enabled: True
-  - minify:
-      minify_html: true
+    - search
+    - git-revision-date-localized
+    - git-committers:
+          repository: CC-YouCube/cc-youcube.github.io
+          branch: main
+          enabled: True
+    - minify:
+          minify_html: true
 
 # Customization
 extra:
-  generator: false
-  social:
-    - icon: fontawesome/brands/github
-      link: https://github.com/CC-YouCube
-      name: GitHub
-    - icon: fontawesome/brands/discord
-      link: https://discord.gg/j6MatB3AbH
-      name: Discord
-  consent:
-    title: Cookie consent
-    description: >-
-      We use cookies to recognize your repeated visits and preferences, as well
-      as to measure the effectiveness of our documentation and whether users
-      find what they're searching for. With your consent, you're helping us to
-      make our documentation better.
+    generator: false
+    social:
+        - icon: fontawesome/brands/github
+          link: https://github.com/CC-YouCube
+          name: GitHub
+        - icon: fontawesome/brands/discord
+          link: https://discord.gg/j6MatB3AbH
+          name: Discord
+    consent:
+        title: Cookie consent
+        description: >-
+            We use cookies to recognize your repeated visits and preferences, as well
+            as to measure the effectiveness of our documentation and whether users
+            find what they're searching for. With your consent, you're helping us to
+            make our documentation better.
 
 # Extensions
 markdown_extensions:
-  - pymdownx.superfences:
-      custom_fences:
-        - name: mermaid
-          class: mermaid
-          format: !!python/name:pymdownx.superfences.fence_code_format
-  - toc:
-      permalink: true
-  - admonition:
-  - pymdownx.details:
-  - pymdownx.tabbed:
-      alternate_style: true
-  - attr_list:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.superfences:
+          custom_fences:
+              - name: mermaid
+                class: mermaid
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - toc:
+          permalink: true
+    - admonition:
+    - pymdownx.details:
+    - pymdownx.tabbed:
+          alternate_style: true
+    - attr_list:
+    - pymdownx.emoji:
+          emoji_index: !!python/name:materialx.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg # Page tree
 
-# Page tree
+
 nav:
-  - Home: index.md
-  - Guides:
-      - Client:
-          - Installation: guides/client/installation.md
-      - Server:
-          - Installation: guides/server/installation.md
-  - API Documentation: /api/
-  - Client Library Documentation: /client/
+    - Home: index.md
+    - Guides:
+          - Client:
+                - Installation: guides/client/installation.md
+          - Server:
+                - Installation: guides/server/installation.md
+                - Spotify Support: guides/server/spotify-support.md
+    - API Documentation: /api/
+    - Client Library Documentation: /client/

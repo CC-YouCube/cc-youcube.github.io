@@ -25,12 +25,29 @@ services:
       - 5000:5000
 ```
 
-## Manual Installtion
+### NVIDIA
 
 !!! warning
-    **Firstly, It is not recommended to install YC manually.
-    If there is some security issue with handling files, then your server might be at risk.
-    You still want to install YC server manually, then it is recommended to run it with a user that has almost no permissions.**
+    Please make sure to install the NVIDIA driver for your GPU before continuing with this installation guide.
+
+Install the NVIDIA driver container toolkit by following [this guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker) by NVIDIA.
+Make sure that the YC docker image you're using has NVIDIA in the tag. Please refer to the [tag list](https://github.com/CC-YouCube/server/pkgs/container/youcube/versions?filters%5Bversion_type%5D=tagged) to discover all the available tags.
+
+#### NVIDIA Docker Compose
+
+Add this to the above-mentioned [docker compose configuration](#docker-compose).
+
+```yaml
+runtime: nvidia
+environment:
+    - NVIDIA_VISIBLE_DEVICES=all
+    - NVIDIA_DRIVER_CAPABILITIES=compute
+```
+
+## Manual Installation
+
+!!! danger
+    **Installing YC manually is not recommended due to potential security risks. However, if you still choose to proceed with manual installation, it is important to run the YC server using a user account that has limited permissions. By doing so, you can reduce the potential damage caused by an attacker.**
 
 Firstly clone [the repository].
 

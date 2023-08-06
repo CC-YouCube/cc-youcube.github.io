@@ -106,5 +106,6 @@ nav:
           - Server:
                 - Installation: guides/server/installation.md
                 - Spotify Support: guides/server/spotify-support.md
+                - NixOS module: guides/server/nixos-module.md
     - API Documentation: /api/
     - Client Library Documentation: /client/

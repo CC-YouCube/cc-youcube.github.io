@@ -103,6 +103,7 @@ nav:
     - Guides:
           - Client:
                 - Installation: guides/client/installation.md
+                - CLI Usage: guides/client/cli-usage.md
           - Server:
                 - Installation: guides/server/installation.md
                 - Spotify Support: guides/server/spotify-support.md

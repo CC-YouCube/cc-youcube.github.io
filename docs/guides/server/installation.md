@@ -15,7 +15,7 @@ You can also build the Image your self buy using YouCube's [Dockerfile]
 This is an example of using the image with docker-compose
 
 ```yaml
-version: "2.0"
+---
 services:
   youcube:
     image: ghcr.io/cc-youcube/youcube:latest
@@ -23,6 +23,7 @@ services:
     hostname: youcube
     ports:
       - 5000:5000
+...
 ```
 
 ### NVIDIA
@@ -30,18 +31,15 @@ services:
 !!! warning
     Please make sure to install the NVIDIA driver for your GPU before continuing with this installation guide.
 
-Install the NVIDIA driver container toolkit by following [this guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/install-guide.html#docker) by NVIDIA.
+Install the NVIDIA driver container toolkit by following [this guide](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html) by NVIDIA.
 Make sure that the YC docker image you're using has NVIDIA in the tag. Please refer to the [tag list](https://github.com/CC-YouCube/server/pkgs/container/youcube/versions?filters%5Bversion_type%5D=tagged) to discover all the available tags.
 
 #### NVIDIA Docker Compose
 
-Add this to the above-mentioned [docker compose configuration](#docker-compose).
+Add this to services -> youcube in the above-mentioned [docker compose configuration](#docker-compose).
 
 ```yaml
 runtime: nvidia
-environment:
-    - NVIDIA_VISIBLE_DEVICES=all
-    - NVIDIA_DRIVER_CAPABILITIES=compute
 ```
 
 ## Manual Installation

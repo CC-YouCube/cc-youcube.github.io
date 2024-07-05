@@ -29,4 +29,4 @@ Using the CLI on LevelOS can be archived by running one of the following command
     main.lua --help
     ```
 
-[preview]: /assets/cli.png
+[preview]: ../../assets/cli.png

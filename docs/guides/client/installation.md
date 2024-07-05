@@ -45,7 +45,7 @@ hoof install youcube
 ```
 
 [unicornpkg]: https://unicornpkg.madefor.cc
-[preview]: /assets/levelos.png
+[preview]: ../../assets/levelos.png
 [LevelOS]: https://discord.com/invite/vBsjGqy99U
 [client]: https://github.com/CC-YouCube/client
 [lStore Package]: https://img.shields.io/github/actions/workflow/status/CC-YouCube/client/lstore-put.yml?branch=main&label=lStore%20Package&logo=github&style=for-the-badge
